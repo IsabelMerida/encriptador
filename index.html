@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header class="header__container">
+        <img class="header__container-logo" src="./assets/padlock.png" alt="Logo">
+    </header>
+    <main class="main__container">
+        <section class="main__container-section-one">
+            <textarea class="main__container-text-area" cols="20" rows="5" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <div class="main__container-section-info">
+                    <img src="./assets/warning.png" alt="Logo de advertencia" width="25px" height="25px">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="main__container-section-buttons">
+                    <button class="btn__encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn__desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>        
+            </div>
+        </section>
+        <section class="main__container-section-two">
+            <div class="main__container-section-card">
+                <div class="main__container-section-message-encrypt">
+                    <textarea class="hidden mensaje" cols="20" rows="10"> </textarea>
+                </div>
+                <div class="visible main__container-section-message">
+                    <img class="main__container-section-img" src="assets/Imagen 1.png" alt="Writing">
+                    <p class="main__container-text-message-one">Ningún mensaje fue encontrado</p>
+                    <p class="main__container-text-message-two">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <div class="main__container-btn-copy">
+                    <button class="hidden btn__copiar" onclick="copiarAlPortapapeles()">Copiar</button>
+               </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="footer">Desarrollado por Isabel Mérida</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
